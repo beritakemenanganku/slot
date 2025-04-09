@@ -22,7 +22,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="Indonesia" />
     <meta name="author" content="RAJA168" />
-    <meta name="og:url" content="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html" />
+    <meta name="og:url" content="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html" />
     <meta
       name="og:title"
       content="Pahami 3 Tanda Scatter Hitam Akan Muncul di Yogyakarta, Ini Saran dari RAJA168"
@@ -49,7 +49,7 @@
       rel="manifest"
       href="https://g.lazcdn.com/g/lzdfe/pwa-assets/5.0.7/manifest/id.json"
     />
-    <link rel="canonical" href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html" />
+    <link rel="canonical" href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html" />
     <!-- start preload -->
     <link
       rel="preload"
@@ -925,7 +925,7 @@
         "name": "Pahami 3 Tanda Scatter Hitam Akan Muncul di Yogyakarta, Ini Saran dari RAJA168",
         "image": "https://www.badges25mm.fr/blog/wp-admin/images/php/tanda-scatter-hitam-yogyakarta-raja168.jpg",
         "description": "Pemain Mahjong Wins 3 di Yogyakarta wajib pahami 3 tanda kemunculan Scatter Hitam yang dibocorkan langsung oleh tim ahli dari RAJA168 secara eksklusif.",
-        "url": "https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html",
+        "url": "https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html",
         "brand": {
           "@type": "Brand",
           "name": "RAJA168"
@@ -933,7 +933,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "url": "https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html",
+          "url": "https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html",
           "price": "10000",
           "priceCurrency": "IDR",
           "priceValidUntil": "2025-12-31",
@@ -941,7 +941,7 @@
           "hasMerchantReturnPolicy": {
             "@type": "MerchantReturnPolicy",
             "refundType": "http://schema.org/FullRefund",
-            "merchantReturnLink": "https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html",
+            "merchantReturnLink": "https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html",
             "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
             "merchantReturnDays": 60,
             "returnMethod": "https://schema.org/ReturnByMail",
@@ -1018,7 +1018,7 @@
             "@type": "NewsArticle",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+              "@id": "https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
             },
             "headline": "Pahami 3 Tanda Scatter Hitam Akan Muncul di Yogyakarta, Ini Saran dari RAJA168",
             "description": "Pemain Mahjong Wins 3 di Yogyakarta wajib pahami 3 tanda kemunculan Scatter Hitam yang dibocorkan langsung oleh tim ahli dari RAJA168 secara eksklusif.",
@@ -1026,7 +1026,7 @@
             "author": {
               "@type": "Organization",
               "name": "EMSI SEO",
-              "url": "https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+              "url": "https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
             },
             "publisher": {
               "@type": "Organization",
@@ -1190,7 +1190,7 @@
                     <a
                       class="highlight"
                       target="_blank"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                       data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback"
                       >RAJA168</a
                     >
@@ -1276,13 +1276,13 @@
                             ></div>
                             <div class="app-stores">
                               <a
-                                href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                                href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                                 class="store-link"
                               >
                                 <i class="app-apple"></i>
                               </a>
                               <a
-                                href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                                href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                                 class="store-link"
                               >
                                 <i class="app-google"></i>
@@ -1296,7 +1296,7 @@
                   <div class="top-links-item" id="topActionSell">
                     <a
                       class="cyan"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                       data-spm-click="gostr=/lzdpub.header.tbar;locaid=d2"
                       >RAJA168</a
                     >
@@ -1416,7 +1416,7 @@
                   <div class="top-links-item grey" id="anonLogin">
                     <a
                       class="grey"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                       data-spm-click="gostr=/lzdpub.header.tbar;locaid=d5"
                       >LOGIN</a
                     >
@@ -1424,7 +1424,7 @@
                   <div class="top-links-item grey" id="anonSignup">
                     <a
                       class="grey"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                       data-spm-click="gostr=/lzdpub.header.tbar;locaid=d6"
                       >DAFTAR</a
                     >
@@ -1507,7 +1507,7 @@
               <div class="lzd-logo-bar">
                 <div class="logo-bar-content header-content">
                   <div class="lzd-logo-content">
-                    <a href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html" data-spm="dhome"
+                    <a href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html" data-spm="dhome"
                       ><img
                         src="https://files.sitestatic.net/ImageFile/202402221224470000004b160194abMKPAFAA__1095x305.gif"
                         alt="logo RAJA168"
@@ -1536,7 +1536,7 @@
                       >
                         <div class="lzd-site-menu-nav-container">
                           <div class="lzd-site-menu-nav-category">
-                            <a href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html">
+                            <a href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html">
                               <span class="lzd-site-menu-nav-category-text"
                                 >Kategori</span
                               >
@@ -3403,7 +3403,7 @@
                     </div>
                   </div>
                   <div class="lzd-nav-cart">
-                    <a href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html" data-spm="dcart"
+                    <a href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html" data-spm="dcart"
                       ><span class="cart-icon"></span>
                       <span class="cart-num" id="topActionCartNumber"></span
                     ></a>
@@ -3429,7 +3429,7 @@
               >
                 <div class="lzd-site-menu-nav-container">
                   <div class="lzd-site-menu-nav-category">
-                    <a href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html">
+                    <a href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html">
                       <span class="lzd-site-menu-nav-category-text"
                         >Kategori</span
                       >
@@ -5126,7 +5126,7 @@
                   <nav class="lzd-menu-labels" data-spm="menu">
                     <a
                       class="lzd-menu-labels-item"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                     >
                       <span
                         class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon"
@@ -5142,7 +5142,7 @@
                     </a>
                     <a
                       class="lzd-menu-labels-item"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                     >
                       <span
                         class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon"
@@ -5160,7 +5160,7 @@
                     </a>
                     <a
                       class="lzd-menu-labels-item"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                     >
                       <span
                         class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon"
@@ -5178,7 +5178,7 @@
                     </a>
                     <a
                       class="lzd-menu-labels-item"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                     >
                       <span
                         class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon"
@@ -5673,7 +5673,7 @@
                     <a
                       class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link"
                       target="_self"
-                      href="https://hubungan-internasional.univrab.ac.id/kategori/tanda-scatter-hitam-yogyakarta-raja168.html"
+                      href="https://hubungan-internasional.univrab.ac.id/vendor/tanda-scatter-hitam-yogyakarta-raja168.html"
                       >RAJA168</a
                     >
                     <div class="pdp-product-brand__divider"></div>
