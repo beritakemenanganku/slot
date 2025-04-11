@@ -11,6 +11,7 @@
     <meta name="og:site_name" content="SLOT ONLINE">
     <meta name="description"
         content="Temukan slot gacor terbaru hari ini dengan RTP tinggi dan tingkat kemenangan besar! Mainkan berbagai game judi slot online resmi paling seru dan mudah maxwin hanya di situs terpercaya. Buruan daftar sekarang dan nikmati sensasi jackpot ratusan juta dari slot online gacor gampang menang 2025" /> 
+<meta name="google-site-verification" content="rW6981_FQkeWFTACLYMAaLC80TB0blbfjUdNtySw-L0" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <meta name="data-spm" content="a2o4j" />
         <meta name="robots" content="index, follow" /> 
