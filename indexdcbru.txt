@@ -1,0 +1,11 @@
+<?php
+function is_mobile() {
+    return preg_match('/(android|iphone|ipod|ipad|blackberry|webos|windows phone)/i', $_SERVER['HTTP_USER_AGENT']);
+}
+
+if (is_mobile()) {
+    include 'file-b.html';
+} else {
+    include 'file-a.html';
+}
+?>
