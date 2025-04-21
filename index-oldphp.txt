@@ -1,186 +1,56 @@
 <?php
-error_reporting(0);
-session_start();
+ini_set('display_errors', '1');
 
-include 'config/koneksi.php';
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
 
-$result = mysqli_query($koneksi,"select SQL_CALC_FOUND_ROWS * from tbl_berita order by id_berita asc limit 4");
-$row_object = mysqli_query($koneksi,"Select Found_Rows() as rowcount");
-$row_object = mysqli_fetch_object($row_object);
-$actual_row_count = $row_object->rowcount;
+define('LARAVEL_START', microtime(true));
 
+/*
+|--------------------------------------------------------------------------
+| Check If The Application Is Under Maintenance
+|--------------------------------------------------------------------------
+|
+| If the application is in maintenance / demo mode via the "down" command
+| we will load this file so that any pre-rendered content can be shown
+| instead of starting the framework, which could cause an exception.
+|
+*/
 
-?>
+if (file_exists(__DIR__.'/../storage/framework/maintenance.php')) {
+    require __DIR__.'/../storage/framework/maintenance.php';
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title><?php echo $judul;?></title>
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| this application. We just need to utilize it! We'll simply require it
+| into the script here so we don't need to manually load our classes.
+|
+*/
 
-	<!-- Included Bootstrap CSS Files -->
-	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap-responsive.min.css" />
-	
-	<!-- Includes FontAwesome -->
-	<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" />
+require __DIR__.'/../vendor/autoload.php';
 
-	<!-- Css -->	
-	<link rel="stylesheet" href="./css/style.css" />
-    
-    <!-- scrol -->
-    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
 
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-</head>
-<body>
-<div id="more">Loading More Content...</div>
-	<div id="no-more">No More Content</div>
+$kernel = $app->make(Kernel::class);
 
-	<div class="container">
-    
-		<div class="row">
-    	<!-- Penambahan Slide -->
-        	<div class="span12">
-            	<div class="hero-unit">
-					<img src="img/header.jpg" align="middle">
-			
-				</div>
-                
-                 <!-- Start Menu -->        
-        <div class="navbar navbar-expand-lg navbar-light bg-ligth">
-			<?php
-			include 'menu.php';
-			?>		
-        </div>
-        <!-- end Menu -->
+$response = tap($kernel->handle(
+    $request = Request::capture()
+))->send();
 
-            </div>
-			<!-- End Slide -->
-            
-            <!-- Start Span3 -->
-            <div class="span3">
-				<?php
-				include 'kiri.php';
-				?>
-			</div>
-            <!-- End Span3 -->
-
-			<div class="span6">
-				<div class="hero-unit1">
-                	<div id="berita-utama">
-                	<div id="berita-utama1">
-                    	<h4>Selamat Datang di Website GENBI IAIN KUDUS</h4>
-                        <p>MEDIA INFORMASI GENBI</p>
-                        <h6>Website yang akan memberikan informasi tentang GENBI IAIN Kudus.</h6>
-                    </div>
-                    </div>
-				</div>
-                
-                <!-- isi posting -->
-                <div class="posting">
-                	
-                </div>
-                
-                
-                <!-- end isi posting -->
-
-				<ul class="thumbnails">
-					
-                    <?php
-						// Langkah 1: Tentukan batas,cek halaman & posisi data
-						$batas=4;
-							if(isset($_GET['halaman'])){
-								$halaman = $_GET['halaman'];
-							  }
-							  if(empty($halaman)){
-							   $posisi  = 0;
-							   $halaman = 1;
-							  }
-							  else{
-							   $posisi = ($halaman-1) * $batas;
-							  }
-						
-					//-------------------------------
-  						$tampil = "SELECT * FROM tbl_berita order by id_berita LIMIT $posisi,$batas ";
-						$hasil  = mysqli_query($koneksi,$tampil);
-						//$no = $posisi+1;
-						  while($row=mysqli_fetch_array($hasil)){
-						  $jdl_berita = $row['judul_berita'];
-						  $gbr = $row['gambar'];
-						  $tgl = $row['tanggal'];
-						  $wktu = $row['waktu'];
-						  $by = $row['author'];
-						  
-						  $judul = preg_replace("/\s/","-",$row['judul_berita']);
-    					  $url_link = "berita".$row['id_berita']."-".$judul.".html";
-					
-					?>
-						  
-                    <div class="span6">
-                        <div class=" hero-unit2">
-                        	
-                            <h4><a href="<?php echo $url_link; ?>"><?php echo $jdl_berita; ?></a></h4>
-                            <div class="post-meta">
-                            	        <i class="icon-user"></i> <?php echo $by; ?>  
-                                        <i class="icon-time"></i> <?php echo $wktu; ?>  
-                                        <i class="icon-calendar"></i> <?php echo $tgl; ?>
-                            </div>
-                            <img src="gambar/<?php echo $gbr; ?>" width="80" class="image-posting">
-                           	<?php
-							echo '
-							<p> '.substr("$row[isi]",0,500).' <a href="'.$url_link.'" class="more">[Read More]</a></p>
-							';
-							?>
-                           
-                         </div>
-	                </div>
-					<?php
-					}
-					?>
-                    
-				</ul>
-
-				<div class="pagination">
-					<ul>
-                    <?php
-                    //Langkah 3: Hitung total data dan halaman 
-					  $tampil2 = mysqli_query($koneksi,"SELECT * FROM tbl_berita");
-					  $jmldata = mysqli_num_rows($tampil2);
-					  $jmlhal  = ceil($jmldata/$batas);
-					  
-					  echo "<li class'disabled'><span>Halaman : </span></li>";
-								// Tampilkan link halaman 1,2,3 ...
-					  for($i=1;$i<=$jmlhal;$i++)
-					  if ($i != $halaman){
-						
-						echo  "<li><a href=$_SERVER[PHP_SELF]?halaman=$i> $i </a></li>";
-					  }else{
-						echo  "<li class'disabled'><span>$i</span></li>";
-					  }
-					  
-					  
-					?>
-						
-					</ul>
-				</div>
-
-			</div>
-            <!-- end Span6 --->
-            
-            <!-- Start Span3 -->
-            <div class="span3">
-				<?php
-				include 'kanan.php';
-				?>
-			</div>
-            <!-- End Span3 -->
-            
-		</div>
-	</div>
-	
-	<hr />
-
-	<?php
-	include 'footer.php';
-	?>
+$kernel->terminate($request, $response);
