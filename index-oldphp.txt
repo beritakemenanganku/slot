@@ -70,9 +70,9 @@ $actual_row_count = $row_object->rowcount;
 				<div class="hero-unit1">
                 	<div id="berita-utama">
                 	<div id="berita-utama1">
-                    	<h4>Selamat Datang di Website DIGITAMA IAIN KUDUS</h4>
-                        <p>MEDIA INFORMASI DIGITAMA</p>
-                        <h6>Website yang akan memberikan informasi tentang DIGITAMA IAIN Kudus.</h6>
+                    	<h4>Selamat Datang di Website GENBI IAIN KUDUS</h4>
+                        <p>MEDIA INFORMASI GENBI</p>
+                        <h6>Website yang akan memberikan informasi tentang GENBI IAIN Kudus.</h6>
                     </div>
                     </div>
 				</div>
