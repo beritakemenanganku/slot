@@ -1,0 +1,189 @@
+<?php include 'autoload.php'; ?>
+<?php
+        include "inc/class.db.php";
+        $db = new db();
+        include "inc/function.php";
+        include "inc/konfigurasi.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BAPPEDA Kapuas Hulu</title>
+        <link rel="shortcut icon" type="image/png" href="pemkec1.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800,900">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700,800,900">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800,900">
+
+        <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/dist/css/style.css">
+        <link rel="stylesheet" href="assets/dist/css/messinasans.css">
+        <link rel="stylesheet" href="assets/dist/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+        <link href="assets/slick/slick.css" rel="stylesheet" />
+        <link href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+                <link href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="assets/fullcalendar/fullcalendar.css" rel="stylesheet">
+        <link href="assets/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <?php include "_header.php"; ?>
+
+        <?php
+                                if(isset($_GET['page']) && $_GET['page']=='beranda'){
+                ?>
+
+        <?php
+                        }
+                ?>
+
+                <?php
+                        include 'page/'.$_GET['page'].".php";
+                ?>
+
+                <?php include "_footer.php"; ?>
+
+
+        <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
+        <script src="assets/dist/js/bootstrap.bundle.js"></script>
+        <script src="assets/dist/js/popper.min.js"></script>
+        <script src="assets/dist/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/fontawesome/js/all.js"></script>
+        <script src="assets/dist/js/main.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
+                <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <script src="assets/fullcalendar/moment.min.js"></script>
+        <script src="assets/fullcalendar/fullcalendar.min.js"></script>
+        <script src="assets/sweetalert2/sweetalert2.all.min.js" type="text/javascript" ></script>
+        <script>
+                        $('.owl-carousel').owlCarousel({
+            loop:false,
+            stagePadding: 15,
+            margin:10,
+            nav:true,
+             navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                640:{
+                    items:2
+                },
+                960:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+                }
+            })
+                </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var tgl = new Date();
+                $('#calendar').fullCalendar({
+                header: {
+                    left: '',
+                    center: 'title',
+                    right: 'prev,next today'
+                },
+                defaultDate: tgl,
+                defaultView: 'month',
+                editable: false,
+                events: <?php include "_agenda.php"; ?>,
+                eventClick: function(info) {
+                let html;
+                html = "<a href='#' class='list-group-item'><small>"+info.tanggal+"</small><br>"+info.title+"</a>"
+                $('#agenda_list').html(html);
+                }
+                });
+            });
+        </script>
+
+
+        <script>
+          $(document).ready(function(){
+            //Default Action
+            $(".tab_modal").hide(); //Hide all content
+            $("#modal-tab li:first").addClass("active").show(); //Activate first tab
+            $(".tab_modal:first").show(); //Show first tab content
+            $('#nama_kelompok').html($("#modal-tab li a:first").text());
+            //On Click Event
+            $("#modal-tab li a").click(function(){
+              $('#nama_kelompok').html($(this).text());
+              $("#modal-tab li").removeClass("active"); //Remove any "active" class
+              $(this).closest("li").addClass("active"); //Add "active" class to selected tab
+              $(".tab_modal").hide(); //Hide all tab content
+              var activeTab = $(this).attr("href"); //Find the rel attribute value to identify the active tab + content
+              $(activeTab).fadeIn(); //Fade in the active content
+              return false;
+            });
+          });
+        </script>
+
+        <script>
+            function show_kategori(cls, caption){
+                $(".tab_kategori").hide();
+                $("#nama_arsip").text(caption);
+                $("."+cls).show();
+            }
+        </script>
+
+        <script type="text/javascript">
+
+                        function LihatArsip(id, file){
+                              $.ajax({
+                    url:'detail-arsip.php',
+                    type:'GET',
+                    data:'id='+id,
+                    dataType: 'json',
+                    success:function(msg){
+                        console.log(msg);
+                                        $('#detail_kategori_arsip').html(msg.kategori_arsip);
+                                        $('#detail_nama_arsip').html(msg.nama_arsip);
+                                        $('#detail_isi_arsip').html(msg.isi_arsip);
+                                        $('#detail_tgl_arsip').html(msg.tgl_arsip);
+                                        $('#detail_arsip').attr('href','file/'+msg.arsip);
+                                        $('#exampleModal').modal('show');
+                    }
+                });
+
+
+                        }
+
+                </script>
+
+        <script type="text/javascript">
+                function survei(id){
+                    $.ajax({
+                        url:'act.php',
+                        type:'POST',
+                        data:'survei='+id,
+                        success:function(msg){
+                            swal({
+                                    title: "Berhasil!",
+                                    text: "Data telah disimpan.",
+                                    type: "success",
+                                    timer: 3000,
+                                    timerProgressBar: true,
+                                    onClose: () => {
+                                        location.reload();
+                                    }
+                                });
+                        }
+                    });
+                }
+
+        </script>
+
+
+
+    </body>
+</html>
