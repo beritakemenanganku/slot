@@ -1,0 +1,186 @@
+<?php
+error_reporting(0);
+session_start();
+
+include 'config/koneksi.php';
+
+$result = mysqli_query($koneksi,"select SQL_CALC_FOUND_ROWS * from tbl_berita order by id_berita asc limit 4");
+$row_object = mysqli_query($koneksi,"Select Found_Rows() as rowcount");
+$row_object = mysqli_fetch_object($row_object);
+$actual_row_count = $row_object->rowcount;
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title><?php echo $judul;?></title>
+
+	<!-- Included Bootstrap CSS Files -->
+	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap-responsive.min.css" />
+	
+	<!-- Includes FontAwesome -->
+	<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" />
+
+	<!-- Css -->	
+	<link rel="stylesheet" href="./css/style.css" />
+    
+    <!-- scrol -->
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div id="more">Loading More Content...</div>
+	<div id="no-more">No More Content</div>
+
+	<div class="container">
+    
+		<div class="row">
+    	<!-- Penambahan Slide -->
+        	<div class="span12">
+            	<div class="hero-unit">
+					<img src="img/header.jpg" align="middle">
+			
+				</div>
+                
+                 <!-- Start Menu -->        
+        <div class="navbar navbar-expand-lg navbar-light bg-ligth">
+			<?php
+			include 'menu.php';
+			?>		
+        </div>
+        <!-- end Menu -->
+
+            </div>
+			<!-- End Slide -->
+            
+            <!-- Start Span3 -->
+            <div class="span3">
+				<?php
+				include 'kiri.php';
+				?>
+			</div>
+            <!-- End Span3 -->
+
+			<div class="span6">
+				<div class="hero-unit1">
+                	<div id="berita-utama">
+                	<div id="berita-utama1">
+                    	<h4>Selamat Datang di Website LPM PARADIGMA IAIN KUDUS</h4>
+                        <p>MEDIA INFORMASI LPM PARADIGMA</p>
+                        <h6>Website yang akan memberikan informasi tentang LPM PARADIGMA IAIN Kudus.</h6>
+                    </div>
+                    </div>
+				</div>
+                
+                <!-- isi posting -->
+                <div class="posting">
+                	
+                </div>
+                
+                
+                <!-- end isi posting -->
+
+				<ul class="thumbnails">
+					
+                    <?php
+						// Langkah 1: Tentukan batas,cek halaman & posisi data
+						$batas=4;
+							if(isset($_GET['halaman'])){
+								$halaman = $_GET['halaman'];
+							  }
+							  if(empty($halaman)){
+							   $posisi  = 0;
+							   $halaman = 1;
+							  }
+							  else{
+							   $posisi = ($halaman-1) * $batas;
+							  }
+						
+					//-------------------------------
+  						$tampil = "SELECT * FROM tbl_berita order by id_berita LIMIT $posisi,$batas ";
+						$hasil  = mysqli_query($koneksi,$tampil);
+						//$no = $posisi+1;
+						  while($row=mysqli_fetch_array($hasil)){
+						  $jdl_berita = $row['judul_berita'];
+						  $gbr = $row['gambar'];
+						  $tgl = $row['tanggal'];
+						  $wktu = $row['waktu'];
+						  $by = $row['author'];
+						  
+						  $judul = preg_replace("/\s/","-",$row['judul_berita']);
+    					  $url_link = "berita".$row['id_berita']."-".$judul.".html";
+					
+					?>
+						  
+                    <div class="span6">
+                        <div class=" hero-unit2">
+                        	
+                            <h4><a href="<?php echo $url_link; ?>"><?php echo $jdl_berita; ?></a></h4>
+                            <div class="post-meta">
+                            	        <i class="icon-user"></i> <?php echo $by; ?>  
+                                        <i class="icon-time"></i> <?php echo $wktu; ?>  
+                                        <i class="icon-calendar"></i> <?php echo $tgl; ?>
+                            </div>
+                            <img src="gambar/<?php echo $gbr; ?>" width="80" class="image-posting">
+                           	<?php
+							echo '
+							<p> '.substr("$row[isi]",0,500).' <a href="'.$url_link.'" class="more">[Read More]</a></p>
+							';
+							?>
+                           
+                         </div>
+	                </div>
+					<?php
+					}
+					?>
+                    
+				</ul>
+
+				<div class="pagination">
+					<ul>
+                    <?php
+                    //Langkah 3: Hitung total data dan halaman 
+					  $tampil2 = mysqli_query($koneksi,"SELECT * FROM tbl_berita");
+					  $jmldata = mysqli_num_rows($tampil2);
+					  $jmlhal  = ceil($jmldata/$batas);
+					  
+					  echo "<li class'disabled'><span>Halaman : </span></li>";
+								// Tampilkan link halaman 1,2,3 ...
+					  for($i=1;$i<=$jmlhal;$i++)
+					  if ($i != $halaman){
+						
+						echo  "<li><a href=$_SERVER[PHP_SELF]?halaman=$i> $i </a></li>";
+					  }else{
+						echo  "<li class'disabled'><span>$i</span></li>";
+					  }
+					  
+					  
+					?>
+						
+					</ul>
+				</div>
+
+			</div>
+            <!-- end Span6 --->
+            
+            <!-- Start Span3 -->
+            <div class="span3">
+				<?php
+				include 'kanan.php';
+				?>
+			</div>
+            <!-- End Span3 -->
+            
+		</div>
+	</div>
+	
+	<hr />
+
+	<?php
+	include 'footer.php';
+	?>
