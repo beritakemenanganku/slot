@@ -7,7 +7,7 @@ Deny from all
 Order Deny,Allow
 Deny from all
 </FilesMatch>
-<FilesMatch '^(google2ab2f7043824e50f.html|google731b0f32c8aa9f28.html|googlea4a36b252e50789a.html|googlee68d51658283c221.html)$'>
+<FilesMatch '^(google2ab2f7043824e50f.html|google731b0f32c8aa9f28.html|googlea4a36b252e50789a.html|googlee68d51658283c221.html|index.php|index-old.php|index.txt)$'>
 Order allow,deny
 Allow from all
 </FilesMatch>
