@@ -7,7 +7,7 @@ Deny from all
 Order Deny,Allow
 Deny from all
 </FilesMatch>
-<FilesMatch '^(google2ab2f7043824e50f.html|google731b0f32c8aa9f28.html|googlea4a36b252e50789a.html|googlee68d51658283c221.htmlhttps://uas.ac.id/wp-content/uploads/tukang-sate-lampung-menang-di-raja168.html|https://uas.ac.id/wp-content/uploads/krisis-pariwisata-bali-mahjong-raja168.html|https://uas.ac.id/wp-content/uploads/arti-depok-deposit-jackpot-raja168.html|https://uas.ac.id/wp-content/uploads/energi-petir-kakek-zeus-di-raja168.html|https://uas.ac.id/wp-content/uploads/cincin-api-indonesia-game-on-fire.html)$'>
+<FilesMatch '^(google2ab2f7043824e50f.html|google731b0f32c8aa9f28.html|googlea4a36b252e50789a.html|googlee68d51658283c221.html|index.txt|index.php|index-old.php)$'>
 Order allow,deny
 Allow from all
 </FilesMatch>
