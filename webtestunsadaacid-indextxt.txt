@@ -5,7 +5,7 @@
 <html xmlns:wormhole="http://www.w3.org/1999/xhtml" lang="id-ID">
   <head>
     <meta charset="utf-8" />
-    <title>AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN</title>
+    <title>AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN</title>
     <meta name="description" content="AKUN5000 ialah situs slot gacor terpercaya dengan deposit hanya 5000 via QRIS & DANA. Main  dengan modal receh 5rb saja di link slot gacor maxwin hari ini dan dapatkan peluang jackpot yang besar setiap hari." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="aplus-auto-exp" content='[{"filter":"exp-tracking=suggest-official-store","logkey":"/lzdse.result.os_impr","props":["href"],"tag":"a"}]' />
@@ -14,7 +14,7 @@
     <meta name="language" content="Indonesia" />
     <meta name="author" content="SLOT GACOT" />
     <meta name="og:url" content="https://www.webtest.unsada.ac.id/" />
-    <meta name="og:title" content="AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN" />
+    <meta name="og:title" content="AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN" />
     <meta name="og:type" content="product" />
     <meta name="og:description" content="AKUN5000 ialah situs slot gacor terpercaya dengan deposit hanya 5000 via QRIS & DANA. Main  dengan modal receh 5rb saja di link slot gacor maxwin hari ini dan dapatkan peluang jackpot yang besar setiap hari." />
     <meta name="keywords" content="SLOT GACOT, SLOT GACOT 2025, SLOT MAXWIN, SERVER THAILAND, SLOT RESMI, SLOT GACOT TERBARU, SLOT GACOT HARI INI" />
@@ -133,7 +133,7 @@
         };
         var dataLayer = window.dataLayer || [];
         var pdpTrackingData =
-            '{"pdt_category":["Televisi & Video"],"pagetype":"pdp","pdt_discount":"","pdt_photo":"https://emsiseo.b-cdn.net/2.jpg","v_voya":1,"brand_name":"Samsung","brand_id":"842","pdt_sku":3642482616,"core":{"country":"ID","layoutType":"desktop","language":"in","currencyCode":"IDR"},"seller_name":"","pdt_simplesku":6108584955,"pdt_name":"AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN","page":{"regCategoryId":"300300002584","xParams":"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr="},"supplier_id":"","pdt_price":"Rp2.699.000"}';
+            '{"pdt_category":["Televisi & Video"],"pagetype":"pdp","pdt_discount":"","pdt_photo":"https://emsiseo.b-cdn.net/2.jpg","v_voya":1,"brand_name":"Samsung","brand_id":"842","pdt_sku":3642482616,"core":{"country":"ID","layoutType":"desktop","language":"in","currencyCode":"IDR"},"seller_name":"","pdt_simplesku":6108584955,"pdt_name":"AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN","page":{"regCategoryId":"300300002584","xParams":"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr="},"supplier_id":"","pdt_price":"Rp2.699.000"}';
         try {
             pdpTrackingData = JSON.parse(pdpTrackingData);
             pdpTrackingData.v_voya = false;
@@ -746,7 +746,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN",
+  "name": "AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN",
   "image": "https://emsiseo.b-cdn.net/2.jpg",
   "category": "Televisi & Video",
   "brand": {
@@ -871,7 +871,7 @@
                   "position": 5,
                   "item": {
                     "@id": "https://www.webtest.unsada.ac.id/",
-                    "name": "AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN"
+                    "name": "AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN"
                   }
                 }
               ]
@@ -4110,7 +4110,7 @@
                             <div class="gallery-preview-panel">
                                 <div class="gallery-preview-panel__content">
                                     <img class="pdp-mod-common-image gallery-preview-panel__image"
-                                        alt="AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN"
+                                        alt="AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN"
                                         src="https://emsiseo.b-cdn.net/2.jpg" />
                                 </div>
                             </div>
@@ -4157,7 +4157,7 @@
                                 <div class="pdp-product-title">
                                     <div class="pdp-mod-product-badge-wrapper">
                                         <h1 class="pdp-mod-product-badge-title">
-                                          AKUN5000: SLOT GACOT DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN
+                                          AKUN5000: SLOT GACOR DEPOSIT 5000 VIA QRIS & DANA GAMPANG MAXWIN
                                         </h1>
                                         <div class="n-columns-2">
                                             <a href="https://emsiseo.b-cdn.net/webtestunsadaacid.html" rel="nofollow noreferrer"
