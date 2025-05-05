@@ -1,0 +1,524 @@
+<!doctype html>
+<html class="no-js" lang="en
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180557004-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-180557004-1');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuju Ratangga: Kereta Kota Kita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="kxpd_52SWFX39jNDWEh0EeKU8mNew6-YeLbCuZ2xDAQ" />
+    <meta name="google-site-verification" content="we0ZwcDw6gEd9Zsrx6P_6zKG1GBzzLcwBPaYD_3kAR4" />
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/twentytwenty.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <div data-sticky-container>
+      <div class="top-bar" data-sticky data-sticky-on="small" data-options="marginTop:0;">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li>
+              <a href="https://jakartamrt.co.id">
+                <img src="assets/images/ic_arrow_back.svg">
+              </a>
+            </li>
+            <li>
+              <a href="https://jakartamrt.co.id">
+                <img src="assets/images/mrt-logo.svg">
+              </a>
+            </li>
+            <li class="navbar-title">Menuju Ratangga: Kereta Kota Kita</li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li class="social-icon">
+              <a onclick="doShareFB(event)" href="#">
+                <img src="assets/images/ic_facebook.svg">
+              </a>
+            </li>
+            <li class="social-icon">
+              <a onclick="doShareTwitter(event)" href="#">
+                <img src="assets/images/ic_twitter.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- video jumbotron -->
+    <div class="jumbotron">
+      <video id="video-background" preload muted autoplay loop>
+        <source src="assets/images/MRT-cover.min.mp4" type="video/mp4">
+      </video>
+      <div class="grid-container jumbotron-wrapper">
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 cell">
+            <div class="jumbotron-title">
+              Menuju Ratangga
+            </div>
+            <div class="jumbotron-subtitle">
+              Kereta Kota Kita
+            </div>
+
+            <div class="grid-x jumbotron-desc-wrapper">
+              <div class="cell medium-9 small-12">
+                <div class="jumbotron-description">
+                  Setelah kita tunggu lebih dari 30 tahun, kini moda transportasi publik yang andal dan berkelas internasional hadir di Ibu Kota. Pada 24 Maret 2019, sistem operasional Moda Raya Terpadu (MRT) pertama di Indonesia diresmikan.
+                </div>
+              </div>
+              <div class="cell medium-3 small-12" style="text-align: center; position: relative;">
+
+                <div class="scroll-wrapper">
+                  <div class="scroll-down-icon">
+                    <img src="assets/images/scroll-down.gif">
+                  </div>
+                  <div class="scroll-down">
+                    Scroll untuk membaca
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="article-body">
+            <div class="section">
+              <p class="has-dropcap">
+                Sejak berabad-abad lalu Jakarta menjadi tempat interaksi berbagai suku bangsa, terutama dalam bingkai logistik 
+                perniagaan. Posisi ini kian mantap saat kota ini berganti nama menjadi Batavia; yaitu ketika VOC, perusahaan asal Belanda, mendirikan pos dagang sekaligus benteng di Bandar Sunda Kelapa pada 1619.
+              </p>
+
+              <p>
+                Belanda sendiri berhasil menancapkan akarnya di kota ini setelah mengalahkan Pangeran Wijayakrama serta mengusir bangsa-bangsa Eropa lainnya yang telah singgah lebih dulu, seperti Inggris dan Portugis. Fisik Batavia lalu bermetamorfosis secara bertahap seiring meluasnya kekuasaan kolonial Belanda; dari Kasteel Batavia/Oud Batavia, meluas hingga Weltevreden, Molenvliet, Koningsplein, serta penyatuan dengan Kotapraja Meester Cornelis. 
+              </p>
+
+              <p>
+                Meski demikian, Belanda tak memiliki rencana besar dan tuntas tentang pembangunan Batavia. Mereka membangunnya semata-mata demi kenyamanan urusan penguasa tanpa memperhatikan kondisi lingkungan, penduduk, dan kearifan lokal. Kondisi ini terus berlanjut bahkan hingga Indonesia merdeka dan kota ini bernama Jakarta. Perencanaan kota dijalankan secara sporadis. Akibatnya jelas: berbagai masalah sosial muncul ke permukaan dan yang paling bikin penat dan merugikan adalah kemacetan lalu lintas.
+              </p>
+            </div>
+            <div class="section-img">
+              <img src="assets/images/kota-batavia-1970.jpg">
+              <div class="section-img-credit">
+                DOK. TROPENMUSEUM
+              </div>
+              <div class="section-img-caption">
+                Kota Batavia 1780
+              </div>
+            </div>
+            <div class="section">
+              <p>
+                Freek Colombijn, sejarawan dan antropolog budaya Universitas Leiden berspesialisasi perkotaan Indonesia yang meraih gelar doktor pada 1994, sampai berujar:
+              </p>
+
+              <div class="quote">
+                <div class="text">
+                  Aneh benar. Jakarta, kota terbesar dan tumbuhnya paling cepat se-Indonesia, tapi hingga 1957 berkembang tidak punya rencana pendahuluan dan zonasi.
+                </div>
+                <div class="author">
+                  ― Freek Colombijn, 1994
+                </div>
+              </div>
+
+              <p>
+                Rencana Pendahuluan Penataan Ibu Kota baru diinisiasi ketika Kotapraja dijabat Walikota Sudiro (1953-1959). Sudiro dikenang terutama karena ia merupakan orang yang merumuskan pembangunan Jakarta dalam empat unsur primer, yakni wisma (rumah), karya (lapangan kerja), marga (transportasi), dan suka (rekreasi dan fasilitas umum). Sudiro juga dikenang karena mendorong 22 Juni menjadi hari ulang tahun Kota Jakarta.
+              </p>
+            </div>
+            <div class="section-slide">
+              <div class="slide-title">
+                Angkutan Umum Jakarta dari Masa ke Masa
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper-container slide1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE1.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE2.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE3.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE4.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <imgsrc="assets/images/angkutan-umum-slide/SLIDE5.png">
+                    </div><div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE6.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE7.png"></div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/angkutan-umum-slide/SLIDE8.png">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-1"></div>
+
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev prev-1"></div>
+              <div class="swiper-button-next next-1"></div>
+            </div>
+
+            <div class="section">
+              <div class="subtitle">
+                Perjalanan Memperjuangkan Sebuah Nadi Kota
+              </div>
+
+              <p>
+                Cikal bakal pembangunan MRT dimulai sejak 1982 ditandai dengan kajian tentang sistem transportasi yang melibatkan Japan International Cooperation Agency (JICA), yang menelurkan Rencana Penataan Transportasi Jabodetabek 1982 - 2020. Rancangan ini selesai disusun pada 1985, sehingga biasa disebut ”Rencana Induk 1985 ”.
+              </p>
+
+              <p>
+                Pada masa kepemimpinan Gubernur Ali Sadikin, pernah tersusun "Djakarta Master Plan 1965-1985" yang juga mencakup arahan penataan transportasi. Arahan ini kemudian menjadi pedoman untuk menyusun rencana induk khusus moda transportasi kereta api kawasan Jabodetabek, yang dinamakan "Master Plan 1982-2002"
+              </p>
+
+              <p>
+                Pada masa Gubernur Soeprapto, diterbitkan juga rencana induk Provinsi DKI Jakarta periode 1985-2005, yang disebut ”Rencana Umum Tata-Ruang dan Rencana Bahagian Wilayah Kota”. Rencana Induk 1985 menjadi dokumen penting hingga mendorong munculnya kajian-kajian lanjutan.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <img src="assets/images/gubernur-soeprapto.jpg">
+              <div class="section-img-credit">
+                DOK. DISPUSIP DKI JAKARTA.
+              </div>
+              <div class="section-img-caption">
+                Potret Gubernur Soeprapto beserta jajaran sedang mendatangi peresmian perumahan di DKI Jakarta pada tahun 1984. 
+              </div>
+            </div>
+
+            <div class="section">
+              <p>
+                Beberapa tahun kemudian, terbit tiga kajian yang terdapat dalam Rencana Induk 1985, yakni bahwa koridor KA Utara-Selatan merupakan jalur yang paling layak untuk dibangun terlebih dulu.
+              </p>
+
+              <p>
+                Karena keragaman perspektif dari tiga kajian ini, pada 1993 Menteri Perhubungan (Menhub) Haryanto Dhanutirto memimpin langsung konsolidasi ketiga kajian tersebut. Hasilnya berupa rancangan yang disebut Consolidated Network Plan (CNP). Oleh Menhub, CNP diserahkan kepada lembaga berwewenang untuk pengesahannya. Salah satu kesimpulan sekaligus rekomendasi penting dari CNP adalah Mass Rapid Transit merupakan moda transportasi paling layak dan tepat untuk Jakarta.
+              </p>
+
+              <div class="quote">
+                <div class="text">
+                  Pada 1994, rencana proyek ini dicanangkan untuk mulai dibangun. Menteri Ristek/Kepala BPPT saat itu, B.J. Habibie, sebelumnya sudah menginstruksikan agar proyek tersebut dibangun melalui skema BOT. 
+                </div>
+                <!-- <div class="author">
+                  ― Freek Colombijn, 1994
+                </div> -->
+              </div>
+
+              <p>
+                Skema BOT, build-operate-transfer—atau dalam bahasa Indonesia disebut ”bangun-guna-serah”—adalah bentuk pendanaan proyek saat
+                suatu entitas swasta menerima konsesi dari entitas lain (umumnya entitas sektor publik) untuk mendanai, merancang, membangun, dan mengoperasikan suatu fasilitas yang dinyatakan dalam kontrak konsesi.
+              </p>
+
+              <p>
+                Persiapan-persiapan proyek dilakukan selama 1995-1997. Pada April 1995, Gubernur Soerjadi Soedirdja membentuk UMP Saumaja (Sistem Angkutan Umum Massal Jakarta) yang bertugas menyusun basic design, termasuk studi kelayakan dan studi pendahuluan Proyek Saumaja, dan dilanjutkan dengan pencarian investor untuk pendanaan. Namun, rencana proyek MRT ini sempat berhenti karena krisis ekonomi pada 1998.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <img src="assets/images/infografik-jica.png">
+            </div>
+
+            <div class="section">
+              <div class="subtitle">
+                Jalan Berliku MRT
+              </div>
+
+              <p>
+                Proyek MRT hadir di Jakarta berkat pelaksanaan proyek transportasi massal yang dilaksanakan secara serius sejak era Gubernur Sutiyoso (1997-2007). Transjakarta (TJ) menjadi pemulanya. Tak puas dengan hanya TJ, Sutiyoso mengajukan MRT ke pemerintah pusat. 
+              </p>
+
+              <p>
+                Usaha Sutiyoso dilanjutkan Gubernur Fauzi Bowo (2007- 2012), di antaranya dengan mendirikan PT MRT Jakarta pada 2008. Di hadapan jajaran serta mitra strategis Pemprov DKI Jakarta, pada 26 April 2012 Fauzi Bowo secara resmi meletakkan batu pertama pembangunan (groundbreaking I) proyek MRT Tahap I Koridor Selatan-Utara sepanjang 15,7 km dari Lebak Bulus- Bundaran HI.
+              </p>
+
+              <p>
+                Setelah peletakan batu pertama, Pemprov DKI Jakarta memindahkan Terminal Lebak Bulus, Stadion Lebak Bulus, mengelola utilitas, memperlebar Jalan Fatmawati, dan membuka tender. Sesuai rencana, pembangunan fisik pun dimulai pada 2013. Adalah Gubernur Joko Widodo yang meneruskan estafet pembangunan MRT selanjutnya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-x">
+      <div class="section-img-full">
+        <img src="assets/images/gubernur-dki.jpg">
+        <div class="img-full-caption">
+          DOK. DISPUSIP DKI JAKARTA
+          <br>
+          Pekerjaan perancangan pembangunan (groundbreaking I) MRT Tahap 1 oleh Gubernur DKI Jakarta Fauzi Bowo (berpeci) di Lebak Bulus, Jakarta, 26 April 2012.
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="article-body">
+            <div class="section">
+
+              <p>
+                Perjuangan menghadirkan MRT Jakarta penuh liku, termasuk tantangan politik dan tuntutan perundang-undangan. PT MRT Jakarta sendiri didirikan pada 17 Juni 2008 sebagai perusahaan milik Pemerintah Daerah Provinsi DKI Jakarta dengan bentuk Perseroan Terbatas (PT).
+              </p>
+
+              <p>
+                Pada tahun pertama proses pembentukannya (2007), PT MRT Jakarta menumpang di kantor Bappeda DKI Jakarta. Tim awal PT MRT Jakarta terdiri dari tujuh orang. Struktur kepemilikannya adalah 99,98 persen Pemprov DKI Jakarta dan 0,02 persen PD Pasar Jaya.
+              </p>
+
+              <p>
+                Dalam kurun setahun, two-step loan agreement disepakati setelah terlebih dahulu disetujui DPRD DKI Jakarta melalui Peraturan Daerah (Perda) No. 3/2008 tentang Pembentukan BUMD PT MRT Jakarta dan Perda 4/2008 tentang Penyertaan Modal Daerah pada PT MRT Jakarta. Kedua Perda tersebut menjadi dasar pendirian PT MRT Jakarta, serta
+                lingkup kerja dan pemodalan perusahaan selama kurun waktu lima tahun.
+              </p>
+              
+              <p>
+                Meskipun PT MRT Jakarta resmi berdiri pada 2008, realisasi pelaksanaan konstruksi fisik MRT baru dapat dimulai lima tahun setelahnya. Tantangan dan hambatan dihadapi PT MRT Jakarta bersama Pemerintah Provinsi DKI Jakarta untuk memastikan bahwa proyek ini dapat berjalan.
+              </p>
+
+              <p>
+                Dalam rencana besar pembangunan MRT, konstruksi besar-besaran mestinya dimulai pada awal 2013.Tetapi MRT baru mulai melantai di tanah Jakarta dengan peletakan kembali batu pertama (groundbreaking II) oleh Gubernur Joko Widodo pada 10 Oktober 2013.Fase ini meneruskan proyek fisik yang sudah dimulai oleh Fauzi Bowo pada 2012.
+              </p><p>
+                Selama pengerjaan persiapan konstruksi fisik, Joko Widodo menitipkan dua pesan kepada PT MRT Jakarta. Pertama, PT MRT Jakarta harus terus-menerus melakukan sosialisasi kemacetan lalu lintas setiap hari akibat pembangunan MRT. Kedua, sosialisasi gaya hidup menggunakan MRT begitu groundbreaking II dimulai. Dengan demikian, ketika MRT sudah beroperasi, warga Jakarta sudah langsung meninggalkan kendaraan pribadi dan berbondong-bondong menggunakan MRT.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <img src="assets/images/anies-william-sabandar.jpg">
+              <div class="section-img-credit">
+                PT MRT JAKARTA/IRWAN CITRAJAYA
+              </div>
+              <div class="section-img-caption">
+                Gubernur DKI Jakarta Anies Baswedan dan Direktur Utama PT MRT Jakarta William Sabandar meresmikan nama Ratangga
+              </div>
+            </div>
+
+            <div class="section">
+              <p>
+                Babak pertama pewujudan kereta bawah tanah pertama di Indonesia memasuki tahap akhir pada tahun 2018. Pengujian demi pengujian dan pengintegrasian antarsistem dilakukan siang-malam. Sumber daya manusia yang diperlukan untuk operasi komersial akhirnya dinilai telah terpenuhi pada Maret 2019.
+              </p>
+
+              <p>
+                Pelibatan masyarakat pun dilakukan dalam bentuk uji coba operasi (trial run) kereta Moda Raya Terpadu (MRT) Jakarta sepanjang 12-24 Maret 2019 yang disambut masyarakat secara antusias. Seluruh slot pendaftaran yang dibuka pada 5 Maret 2019 pukul 10.00 WIB langsung ludes. Hingga 11 Maret 2019, atau sehari sebelum uji coba, jumlah orang yang mendaftar untuk menjajal MRT Jakarta mencapai 184.738 orang. 
+              </p>
+            </div>
+
+            <div class="section-img">
+              <img src="assets/images/seremoni-peresmian-mrt.jpg">
+              <div class="section-img-credit">
+                PT MRT JAKARTA/IRWAN CITRAJAYA
+              </div>
+              <div class="section-img-caption">
+                Seremoni peresmian MRT Jakarta Fase 1, 24 Maret 2019
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="quote">
+                <div class="text">
+                  Nama Ratangga, diberikan oleh jajaran 
+                  PT MRT Jakarta dan Gubernur DKI Jakarta Anies Rasyid Baswedan untuk kereta MRT, berasal dari bahasa Kawi (Jawa Kuno) rathangga. Diambil dari Purusadha Shanta karya Mpu Tantular, rathangga dekat sekali maknanya dengan kereta kuat milik pejuang teguh.
+                </div>
+                <!-- <div class="author">
+                  ― Freek Colombijn, 1994
+                </div> -->
+              </div>
+
+              <p>
+                Terkait penamaan ini, Direktur Utama PT MRT Jakarta, William Palitondok Sabandar, mengungkapkan bahwa pada hakikatnya, nama itu merupakan asa sekaligus doa: semoga MRT Jakarta selalu kuat dan teguh dalam mengangkut para pejuang Jakarta.
+              </p>
+
+              <div class="before-after" id="container1">
+                <!-- The before image is first -->
+                <img src="assets/images/Infografik_Ratangga_Tampak_Luar.jpg" />
+                <!-- The after image is last -->
+                <img src="assets/images/Infografik_Ratangga_Tampak_Dalam.jpg" />
+
+                <div class="before-after-caption">
+                  NINGSIAWATI & TIURMA CLARA JESSICA
+                </div>
+              </div>
+
+              <p>
+                Hari yang ditunggu-tunggu pun tiba. Setelah lebih dari 30 tahun dipikirkan, didiskusikan, dirancang, dan diperdebatkan, moda transportasi publik yang andal dan berkelas internasional hadir di Ibu Kota. Harapan masyarakat Jakarta benar-benar terwujud. Pada 24 Maret 2019, Presiden RI Joko Widodo meresmikan sistem operasional Moda Raya Terpadu (MRT, Mass Rapid Transit) pertama di Indonesia.
+              </p>
+
+            </div>
+
+            <div class="section-slide">
+              <!-- Slider main container -->
+              <div class="swiper-container slide2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="assets/images/Infografik Produk Hukum Terkait MRT Jakarta/Slide 1-Infografik Produk Hukum Terkait MRT Jakarta.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/Infografik Produk Hukum Terkait MRT Jakarta/Slide 2-Infografik Produk Hukum Terkait MRT Jakarta.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/Infografik Produk Hukum Terkait MRT Jakarta/Slide 3-Infografik Produk Hukum Terkait MRT Jakarta.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/Infografik Produk Hukum Terkait MRT Jakarta/Slide 4-Infografik Produk Hukum Terkait MRT Jakarta.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/Infografik Produk Hukum Terkait MRT Jakarta/Slide 5-Infografik Produk Hukum Terkait MRT Jakarta.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/Infografik Produk Hukum Terkait MRT Jakarta/Slide 6-Infografik Produk Hukum Terkait MRT Jakarta.png">
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-2"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev prev-2"></div>
+              <div class="swiper-button-next next-2"></div>
+            </div>
+
+            <div class="section">
+              <div class="subtitle">
+                Ratangga Mengubah Wajah Jakarta
+              </div>
+
+              <p>
+                Kehadiran MRT Jakarta menjadi angin segar bagi moda transportasi raya Jakarta. Ratangga melaju dari Lebak Bulus sampai Bundaran HI. Untuk jarak tempuh yang jauh, cukup memakan waktu 30 menit. Moda MRT Jakarta memangkas banyak waktu perjalanan.
+              </p>
+
+              <p>
+                Tak dipungkiri, berkurangnya waktu tempuh dapat meningkatkan mobilitas masyarakat dalam menjalankan aktivitas sehari-hari. Di tengah polemik ‘dimakan jalanan’ yang selama ini mendera Ibu Kota, Ratangga hadir menjadi solusi.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <img src="assets/images/depo-mrt-lebak-bulus.jpg">
+              <div class="section-img-credit">
+                PT MRT JAKARTA/IRWAN CITRAJAYA
+              </div>
+              <div class="section-img-caption">
+                Depo MRT Lebak Bulus
+              </div>
+            </div>
+
+            <div class="section">
+              <p>
+                Untuk dapat menikmati layanan transportasi kereta MRT Jakarta, pengguna moda cukup menyiapkan kartu pembayaran yang telah diterbitkan oleh MRT atau bank. Ratangga memberikan kemudahan dan kenyamanan transaksi pembayaran.
+              </p>
+
+              <p>
+                Jadwal keberangkatan dan kedatangan kereta MRT pada Passenger Information Display di setiap peron menunjukkan waktu, memastikan penumpang dapat memperoleh informasi tepat di depan mata mereka. Ratangga memastikan ketepatan waktu keretanya serta penumpangnya.
+              </p>
+
+              <p>
+                Kereta MRT Jakarta menjadi tempat pertemuan berbagai lapisan masyarakat. Mereka meninggalkan kendaraan pribadi dan beralih menggunakan moda transportasi massal. Ratangga mewadahi persinggungan masyarakat di tiap rangkaian keretanya.</p>
+
+              <p>
+                Ratangga menyajikan dampak besar di mana rakyat Ibu Kota mengadopsi mobilitas yangselain nyaman dan tepat waktu,  juga ramahlingkungan. Dengan meninggalkan kendaraan pribadi dan menggunakan transportasi massal, produksi gas emisi berkurang. Ratangga menyodorkan udara lebih bersih untuk dihirup.
+              </p>
+
+              <p>
+                Tak pelak, kehadiran MRT Jakarta membawa banyak kebiasaan dan sikap baru pada napas kehidupan sehari-hari rakyat Ibu Kota. Napas yang dulu sesak oleh jejal jalanan yang hiruk pikuk, udara yang pengap dan penuh polusi, dan waktu yang lapuk dimakan. Perlahan, warga Jakarta mengadopsi aktivitas di negara maju, pergerakan menuju terciptanya smart city sudah lebih dekat beberapa langkah.
+              </p>
+
+              <p>
+                Ratangga bukan hadir sebagai transportasi massal belaka, ia menawarkan sikap dan kebiasaan baru sebagai pilihan transportasi massal yang terdepan. Ratangga adalah budaya baru rakyat Ibu Kota.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <img src="assets/images/rute-mrt-jakarta-fase-1.gif">
+            </div>
+
+            <div class="section-ebook">
+              <div class="grid-x">
+                <div class="cell small-12 medium-4">
+                  <img src="assets/images/menuju-ratangga.png">
+                </div>
+                <div class="cell small-12 medium-8 ebook-desc-wrapper">
+                  <div class="ebook-title">
+                    Unduh eBook “Menuju Ratangga: Kereta Kota Kita” Untuk Kisah Lengkap MRT Jakarta
+                  </div>
+
+                  <div class="ebook-description">
+                    Buku ”Menuju Ratangga: Kereta Kota Kita” mencakup sejarah panjang Kota Jakarta, dinamika sistem transportasi, serta perjuangan para pemimpin negeri ini dalam mengupayakan MRT, sebuah moda transportasi ideal bagi kota Jakarta.  
+                  </div>
+
+                  <a class="button btn-ebook-download" id="pdf-ratangga-download-link" href="assets/pdf/E-Book Menuju Ratangga Kereta Kota Kita.pdf" onclick=”_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);” download>
+                    <span> <img src="assets/images/ic_download.svg"></span>
+                    Unduh Buku
+                  </a>
+                  <div class="filesize">
+                    File Type: PDF (5,9 MB)
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell large-3 kerabat-kerja">
+            <strong>KERABAT</strong>
+            <br>
+            KERJA
+          </div>
+          <div class="cell large-4 company">
+            <strong>PT MRT JAKARTA (PERSERODA)</strong>
+            <br>
+            dan <strong>HARIAN KOMPAS</strong>
+          </div>
+          <div class="cell large-5 copyright">
+            Jakarta MRT Copyrights © 2020 - All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> SUSPECTED --> 
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/foundation.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script> -->
+    <script src="assets/js/jquery.event.move.js"></script>
+    <script src="assets/js/jquery.twentytwenty.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
