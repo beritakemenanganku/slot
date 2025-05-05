@@ -5,8 +5,8 @@
 <html xmlns:wormhole="http://www.w3.org/1999/xhtml" lang="id-ID">
   <head>
     <meta charset="utf-8" />
-    <title>TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI</title>
-    <meta name="description" content="TOTO SLOT adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D." />
+    <title>RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI</title>
+    <meta name="description" content="RAJA168 adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="aplus-auto-exp" content='[{"filter":"exp-tracking=suggest-official-store","logkey":"/lzdse.result.os_impr","props":["href"],"tag":"a"}]' />
     <meta name="data-spm" content="TOTO SLOT" />
@@ -14,9 +14,9 @@
     <meta name="language" content="Indonesia" />
     <meta name="author" content="TOTO SLOT" />
     <meta name="og:url" content="https://cms.collabonation.co.id/" />
-    <meta name="og:title" content="TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI" />
+    <meta name="og:title" content="RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI" />
     <meta name="og:type" content="product" />
-    <meta name="og:description" content="TOTO SLOT adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D." />
+    <meta name="og:description" content="RAJA168 adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D." />
     <meta name="keywords" content="TOTO SLOT, TOTO SLOT 2025, SLOT MAXWIN, SERVER THAILAND, SLOT RESMI, TOTO SLOT TERBARU, TOTO SLOT HARI INI" />
     <meta name="og:image" content="https://emsiseo.b-cdn.net/6.jpg" />
     <link rel="icon" type="image/x-icon" href="https://dewabos.b-cdn.net/img/favicon.ico" />
@@ -133,7 +133,7 @@
         };
         var dataLayer = window.dataLayer || [];
         var pdpTrackingData =
-            '{"pdt_category":["Televisi & Video"],"pagetype":"pdp","pdt_discount":"","pdt_photo":"https://emsiseo.b-cdn.net/6.jpg","v_voya":1,"brand_name":"Samsung","brand_id":"842","pdt_sku":3642482616,"core":{"country":"ID","layoutType":"desktop","language":"in","currencyCode":"IDR"},"seller_name":"","pdt_simplesku":6108584955,"pdt_name":"TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI","page":{"regCategoryId":"300300002584","xParams":"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr="},"supplier_id":"","pdt_price":"Rp2.699.000"}';
+            '{"pdt_category":["Televisi & Video"],"pagetype":"pdp","pdt_discount":"","pdt_photo":"https://emsiseo.b-cdn.net/6.jpg","v_voya":1,"brand_name":"Samsung","brand_id":"842","pdt_sku":3642482616,"core":{"country":"ID","layoutType":"desktop","language":"in","currencyCode":"IDR"},"seller_name":"","pdt_simplesku":6108584955,"pdt_name":"RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI","page":{"regCategoryId":"300300002584","xParams":"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr="},"supplier_id":"","pdt_price":"Rp2.699.000"}';
         try {
             pdpTrackingData = JSON.parse(pdpTrackingData);
             pdpTrackingData.v_voya = false;
@@ -746,7 +746,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI",
+  "name": "RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI",
   "image": "https://emsiseo.b-cdn.net/6.jpg",
   "category": "Televisi & Video",
   "brand": {
@@ -756,7 +756,7 @@
   },
   "sku": "3642482616_ID-6108584955",
   "mpn": "3642482616",
-  "description": "TOTO SLOT adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D.",
+  "description": "RAJA168 adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D.",
   "url": "https://cms.collabonation.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html",
   "review": {
     "@type": "Review",
@@ -871,7 +871,7 @@
                   "position": 5,
                   "item": {
                     "@id": "https://cms.collabonation.co.id/",
-                    "name": "TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI"
+                    "name": "RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI"
                   }
                 }
               ]
@@ -1292,7 +1292,7 @@
                                 </div>
                                 <div class="lzd-nav-search" data-spm="search">
                                     <marquee behavior="" direction="">
-                                      TOTO SLOT adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D.
+                                      RAJA168 adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D.
                                     </marquee>
 
                                     <div id="button" data-spm-click="gostr=/lzdpub.header.search;locaid=d_go"></div>
@@ -4110,7 +4110,7 @@
                             <div class="gallery-preview-panel">
                                 <div class="gallery-preview-panel__content">
                                     <img class="pdp-mod-common-image gallery-preview-panel__image"
-                                        alt="TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI"
+                                        alt="RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI"
                                         src="https://emsiseo.b-cdn.net/6.jpg" />
                                 </div>
                             </div>
@@ -4157,7 +4157,7 @@
                                 <div class="pdp-product-title">
                                     <div class="pdp-mod-product-badge-wrapper">
                                         <h1 class="pdp-mod-product-badge-title">
-                                          TOTO SLOT: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI
+                                          RAJA168: SITUS TOTO SLOT GACOR 4D & TOTO TOGEL ONLINE RESMI
                                         </h1>
                                         <div class="n-columns-2">
                                             <a href="https://emsiseo.b-cdn.net/cmscollabonationcoid.html" rel="nofollow noreferrer"
@@ -4309,7 +4309,7 @@
 
 <!-- artikelkelkel -->
 
-<p>TOTO SLOT adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D.</p>
+<p>RAJA168 adalah situs resmi Toto Slot Gacor 4D dan Toto Togel Online terpercaya dengan peluang menang tertinggi di tahun 2025. Menyediakan permainan slot online dengan RTP tinggi, bocoran pola gacor harian, serta pasaran togel terlengkap seperti 4D, 3D, dan 2D.</p>
 
 
                         </div>
