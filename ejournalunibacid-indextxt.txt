@@ -25,7 +25,7 @@
     <link rel="amphtml" href="https://emsiseo.b-cdn.net/ejournalunibacid.html" />
     <meta name="google-site-verification" content="DEG7yudHYxvGKzqe8By07Yyz-KJ4OfwxtCVvg9KsjTE" />
     <meta name="google-site-verification" content="vafg-6dR1HQHz8VKYjdmguE_p5NygKC_s2W8qzRWldQ" />
-
+<meta name="google-site-verification" content="6l1Z1nlyJUCKfoUD2W95XWGvQCVTQUykgnRuDfCsqso" />
     <!-- start preload -->
     <link rel="preload" href="https://emsiseo.b-cdn.net/19.jpg" as="image" />
     <link rel="preconnect dns-prefetch" href="//cart.lazada.co.id" />
