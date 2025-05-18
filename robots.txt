@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.hum.umss.edu.bo/sitemap.xml
