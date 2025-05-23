@@ -1,0 +1,150 @@
+<?php
+	include "inc/class.db.php";
+	$db = new db();
+	include "inc/function.php";
+	include "inc/konfigurasi.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+        <title>Dinas Perhubungan - Kapuas Hulu</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800,900">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700,800,900">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800,900">
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+        <link href="assets/css/zoom.css" rel="stylesheet" />
+        <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
+        <link href="assets/slick/slick.css" rel="stylesheet" />
+        <link href="assets/fullcalendar/fullcalendar.css" rel="stylesheet">
+		<link href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+		<link href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="assets/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+    </head>
+    <body>
+		
+		<?php include "_header.php"; ?>
+        
+		<?php
+				if(isset($_GET['page']) && $_GET['page']=='beranda'){
+		?>
+
+        <?php
+			}
+		?>
+
+		<?php
+			include 'page/'.$_GET['page'].".php";
+		?> 
+
+		<?php include "_footer.php"; ?>
+
+        
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/fontawesome/css/all.min.css"></script>
+        <script src="assets/slick/slick.min.js"></script>
+		<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/fullcalendar/moment.min.js"></script>
+        <script src="assets/fullcalendar/fullcalendar.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/sweetalert2/sweetalert2.all.min.js" type="text/javascript" ></script>
+		<script>
+			$('.owl-carousel').owlCarousel({
+            loop:false,
+            stagePadding: 15,
+            margin:10,
+            nav:true,
+             navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                640:{
+                    items:2
+                },
+                960:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+                }
+            })
+		</script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var tgl = new Date();
+                $('#calendar').fullCalendar({
+                header: {
+                    left: '',
+                    center: 'title',
+                    right: 'prev,next today'
+                },
+                defaultDate: tgl,
+                defaultView: 'month',
+                editable: false,
+                events: <?php include "_agenda.php"; ?>,
+                eventClick: function(info) {                 
+                let html;
+                html = "<a href='#' class='list-group-item'><small>"+info.tanggal+"</small><br>"+info.title+"</a>"
+                $('#agenda_list').html(html);
+                }       
+                });     
+            });    
+        </script>
+
+        <script>	
+            function show_kategori(cls, caption){
+                $(".tab_kategori").hide();
+                $("#nama_arsip").text(caption);
+                $("."+cls).show();
+            }
+        </script>
+
+        <script type="text/javascript">
+			
+			function LihatArsip(id, file){
+				$('#id_arsip').val(id);
+				$('#exampleModal').modal('show');
+			}
+			
+		</script>
+
+        <script type="text/javascript">
+
+                function survei(id){
+                    $.ajax({
+                        url:'act.php',
+                        type:'POST',
+                        data:'survei='+id,
+                        success:function(msg){
+                            swal({
+                                    title: "Berhasil!",
+                                    text: "Data telah disimpan.",
+                                    type: "success",
+                                    timer: 3000,
+                                    timerProgressBar: true,
+                                    onClose: () => {
+                                        location.reload();
+                                    }
+                                });
+                        }
+                    });
+                }
+                
+            
+        </script>
+    </body>
+</html>
