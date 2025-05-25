@@ -1,150 +1,723 @@
-<?php
-	include "inc/class.db.php";
-	$db = new db();
-	include "inc/function.php";
-	include "inc/konfigurasi.php";
-?>
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
-        <title>Dinas Perhubungan - Kapuas Hulu</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800,900">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700,800,900">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800,900">
-        
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
-        <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
-        <link href="assets/css/zoom.css" rel="stylesheet" />
-        <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
-        <link href="assets/slick/slick.css" rel="stylesheet" />
-        <link href="assets/fullcalendar/fullcalendar.css" rel="stylesheet">
-		<link href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
-		<link href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
-        <link href="assets/sweetalert2/sweetalert2.min.css" rel="stylesheet">
-    </head>
-    <body>
+<html lang="id-ID">
+  <head>
+
+    <title>DISKOMINFOTIK | KAPUAS HULU</title>
+    <!-- Start Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="google-site-verification" content=""/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="description" content="DISKOMINFOTIK">
+    <meta name="keywords" content="Dinas Komunikasi Informatika dan Statistik">
+    <meta name="author" content="Diskominfotik">
+    <meta http-equiv="Copyright" content="Diskominfotik"/>
+    <meta name="language" content="Indonesia"/>
+    <meta name="revisit-after" content="7"/>
+    <meta name="webcrawlers" content="all"/>
+    <meta name="rating" content="general"/>
+    <meta name="spiders" content="all"/>
+    <meta property="place:location:latitude" content="0.879835"/>
+    <meta property="place:location:longitude" content="112.923297"/>
+    <meta property="business:contact_data:street_address" content="Jl. Antasari No. 8 Putussibau"/>
+    <meta property="business:contact_data:locality" content="0567 2022922"/>
+    <meta property="business:contact_data:postal_code" content="78711"/>
+    <meta property="business:contact_data:country_name" content="Indonesia"/>
+    <meta property="business:contact_data:email" content="diskominfo_statistik@kapuashulukab.go.id"/>
+    <meta property="business:contact_data:phone_number" content="0567 2022922"/>
+    <meta property="business:contact_data:website" content="https://diskominfo.kapuashulukab.go.id/"/>
+    <meta property="og:type" content="DISKOMINFOTIK"/>
+    <meta property="profile:first_name" content=""/>
+    <meta property="profile:last_name" content=""/>
+    <meta property="profile:username" content=""/>
+    <meta property="og:title" content="DISKOMINFOTIK | KAPUAS HULU"/>
+    <meta property="og:description" content="DISKOMINFOTIK"/>
+    <meta property="og:image" content="https://diskominfo.kapuashulukab.go.id/public/assets/images/theme/icon.png"/>
+    <meta property="og:url" content="https://diskominfo.kapuashulukab.go.id/"/>
+    <meta property="og:site_name" content="DISKOMINFOTIK | KAPUAS HULU"/>
+    <meta property="fb:admins" content="https://www.facebook.com/DiskominfotikKH.PPID"/>
+    <meta itemprop="name" content="DISKOMINFOTIK | KAPUAS HULU"/>
+    <meta itemprop="description" content="DISKOMINFOTIK"/>
+    <meta itemprop="image" content="https://diskominfo.kapuashulukab.go.id/public/assets/images/theme/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- End Meta -->
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/css/elegant-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Teko|Lato|Raleway:700,400,400italic,500" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="" crossorigin=""/>
+    <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet"/>    <link href="https://diskominfo.kapuashulukab.go.id/public/assets/images/theme/icon.png" rel="shortcut icon">
+  </head>
+  <body class="layout-boxed">
+ 
+    <!-- WRAPPER -->
+    <div id="wrapper">
+      <!-- NAVBAR -->
+      
+      <nav class="navbar navbar-default navbar-fixed-top navbar-shrinkable">
+        <div class="nav-topbar topbar-gradient clearfix hidden-sm hidden-xs hidden-md" style="">
+          <div class="container">
+            <div class="left">
+                            <img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/theme/logotop.png" height="" alt="Logo">
+            </div>
+            <div class="right">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a>Senin, 13 Januari 2025</a></li>
+                <li><a><span class="clock"></span> WIB</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <i class="fa fa-bars"></i>
+          </button>
+          <a href="/web/20250113072133/https://diskominfo.kapuashulukab.go.id/" class="navbar-brand">
+            <h4 class="hidden-lg">KOMINFO KAPUAS HULU</h4>
+          </a>
+          <div id="main-nav-collapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav main-navbar-nav">
+              <li class=" active"> <a href="/web/20250113072133/https://diskominfo.kapuashulukab.go.id/"> Beranda &nbsp;<i class="no-icon"></i></a></li><li class="dropdown "> <a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown"> Profil &nbsp;<i class="fa fa-angle-down"></i></a><ul class="dropdown-menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/sambutan-kepala-dinas">Sambutan Kepala Dinas</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/tugas-pokok-dan-fungsi-dinas">Tugas dan Fungsi Dinas</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/visi-dan-misi-bupati">Visi Misi Bupati</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/struktur-organisasi-">Struktur Organisasi</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/visi-dan-misi-layanan">Visi Misi Layanan</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/motto-layanan">Motto Layanan</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/maklumat-layanan">Maklumat Layanan</a></li></ul></li><li class="dropdown "> <a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown"> Bidang &nbsp;<i class="fa fa-angle-down"></i></a><ul class="dropdown-menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/tupoksi-sekretariat" class="dropdown-toggle" data-toggle="dropdown">Sekretariat <i class="fa fa-angle-right"></i></a><ul class="dropdown-menu" role="menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/tupoksi-sekretariat">Tupoksi Sekretariat</a></li></ul></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown">Bidang KIP <i class="fa fa-angle-right"></i></a><ul class="dropdown-menu" role="menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/tupoksi-bidang-kip">Tupoksi Bidang KIP</a></li></ul></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown">Bidang SAI <i class="fa fa-angle-right"></i></a><ul class="dropdown-menu" role="menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/tupoksi-bidang-sai">Tupoksi Bidang SAI</a></li></ul></li></ul></li><li class="dropdown "> <a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown"> PROGRAM KERJA &nbsp;<i class="fa fa-angle-down"></i></a><ul class="dropdown-menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/lakip">Lakip</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/renstra">Renstra</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/renja">Renja </a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/sakip">Sakip</a></li></ul></li><li class="dropdown "> <a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown"> PELAYANAN &nbsp;<i class="fa fa-angle-down"></i></a><ul class="dropdown-menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-subdomain-website-kapuas-hulu">Layanan Subdomain Website Kapuas Hulu</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-fasilitasi-usulan-bts">Layanan Fasilitasi Usulan BTS</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-fasilitasi-usulan-akses-internet">Layanan Fasilitasi Usulan Akses Internet </a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-permintaan-data-statistik-sektoral">Layanan Permintaan Data Statistik Sektoral</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-permintaan-informasi-dan-dokumentasi">Layanan Permintaan Informasi dan Dokumentasi </a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-aduan-aspirasi--pengaduan-masuyarakat-lapor">Layanan Aduan Aspirasi Pengaduan Masyarakat Lapor</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-domain-desa">Layanan Fasilitasi Domain Desa.id</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/layanan-website-desa">Layanan Website Desa</a></li></ul></li><li class=" "> <a href="https://diskominfo.kapuashulukab.go.id/berita"> Berita &nbsp;<i class="no-icon"></i></a></li><li class="dropdown "> <a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown"> Galeri &nbsp;<i class="fa fa-angle-down"></i></a><ul class="dropdown-menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/galeri">Foto</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/video">Video</a></li></ul></li><li class=" "> <a href="https://diskominfo.kapuashulukab.go.id/page/ppid"> PPID &nbsp;<i class="no-icon"></i></a><ul class="dropdown-menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/" class="dropdown-toggle" data-toggle="dropdown">SEKRETARIAT DAERAH <i class="fa fa-angle-right"></i></a><ul class="dropdown-menu" role="menu"><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/bagian2-pada-setda-kh">BAGIAN BAGIAN-SETDA KAB KAPUAS HULU</a></li></ul></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/sekretariat-dprd">SEKRETARIAT DPRD</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/inspektorat">INSPEKTORAT</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/dinas">DINAS</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/badan">BADAN</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/kecamatan">KECAMATAN</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/desa">DESA</a></li><li class="dropdown "><a href="https://diskominfo.kapuashulukab.go.id/page/website-kegiatan">KEGIATAN DAN LAYANAN PUBLIK</a></li></ul></li><li class=" "> <a href="https://diskominfo.kapuashulukab.go.id/page/kontak-kami"> Kontak Kami &nbsp;<i class="no-icon"></i></a></li>            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END NAVBAR -->
+      <!-- SLIDER -->
+      <section class="m-0 p-0">
+	<div class="marquee">
+		<ul class="list-inline mb-0">
+			<li><i class="fa fa-circle-o"></i> 26/10</span> - Selamat Datang</li>		</ul>
+	</div>
+</section>
+<div class="container mt-10">
+	<div class="row">
+		<div class="col-sm-9 p-0">
+			<!-- SLIDER -->
+			<div id="slider-top" class="owl-carousel carousel-nav-hidefirst owl-theme" data-dots="false">
+				<div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/bg_slider/bg_slider_48Spanduk-HUT-RI-79-Dinas.jpg" class="img-responsive" alt="Image"></div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/bg_slider/bg_slider_47SLIDE---WEBSITE-DINAS-1.jpg" class="img-responsive" alt="Image"></div>			</div>
+			<!-- SLIDER -->
+		</div>
+		<div class="col-sm-3 pr-0">
+			<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/kadis.png" class="img-responsive kadistop" style="">
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9 p-0"><a href="berita" type="button" class="btn btn-sm btn-info btn-outline pull-right">Arsip Berita</a>
+		<h2 class="heading-border-bottom-short border-primary mt-0"><i class="fa fa-newspaper-o text-primary"></i> Berita Terbaru </h2>
+		<div id="carousel-single" class="owl-carousel carousel-nav-hidefirst owl-theme" data-dots="false">
+			<div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_61photo_2024-12-14-18.42.30-1024x682.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/rakor-optimalisasi-lahan-2024-untuk-swasembada-dan-ekspor-beras-di-kalimantan-barat"> <h3>Rakor Optimalisasi Lahan 2024 untuk Swasembada dan Ekspor Beras di Kalimantan Barat</h3></a>
+					<p>Putussibau, Kapuas Hulu &amp;ndash; Rapat Koordinasi (Rakor) mengenai progres optimalisasi lahan tahun 2024 serta swasembada dan ekspor beras di</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Jumat, 10 Jan 2025
+					<i class="fa fa-clock-o"></i> 15:49 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_85photo_2025-01-10-09.36.06-1024x682.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/kpu-kapuas-hulu-tetapkan-pasangan-calon-bupati-dan-wakil-bupati-terpilih-periode-20252030"> <h3>KPU Kapuas Hulu Tetapkan Pasangan Calon Bupati dan Wakil Bupati Terpilih Periode 2025-2030</h3></a>
+					<p>Komisi Pemilihan Umum (KPU) Kabupaten Kapuas Hulu telah melaksanakan Rapat Pleno Terbuka pada Kamis (9/1/ 2025) pukul 19.00 WIB, bertempat di Ruang</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Jumat, 10 Jan 2025
+					<i class="fa fa-clock-o"></i> 15:50 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_81WhatsApp-Image-2024-12-09-at-00.38.28.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/bupati-kh-hadir-pada-pembukaan-mtq-tingkat-provinsi-kalimantan-barat-ke-xxxii"> <h3>Bupati KH Hadir Pada Pembukaan MTQ Tingkat Provinsi Kalimantan Barat Ke XXXII</h3></a>
+					<p>Bupati Kapuas Hulu Fransiskus Diaan,S.H., M.H hadir dalam pembukaan Musabaqah Tilawatil Qur'an (MTQ) Tingkat Provinsi Kalimantan Barat Ke XXXII Tahun</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Jumat, 13 Des 2024
+					<i class="fa fa-clock-o"></i> 14:19 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_12WhatsApp-Image-2024-12-05-at-10.11.18.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/wabup-lepas-kafilah-mtq-untuk-mtq-xxxii-tingkat-provinsi-kalimantan-barat-di-kabupaten-landak"> <h3>Wabup Lepas Kafilah MTQ untuk MTQ XXXII Tingkat Provinsi Kalimantan Barat di Kabupaten Landak</h3></a>
+					<p>Wakil Bupati Kapuas Hulu, Ir. Wahyudi Hidayat, S.T., secara resmi melepas kafilah Musabaqah Tilawatil Qur'an (MTQ) Kabupaten Kapuas Hulu yang akan</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Kamis, 05 Des 2024
+					<i class="fa fa-clock-o"></i> 10:34 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_43WhatsApp-Image-2024-12-02-at-09.44.51.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/sekda-buka-pelatihan-teknis-manajemen-stres"> <h3>Sekda Buka Pelatihan Teknis Manajemen Stres</h3></a>
+					<p>Sekretaris Daerah Kabupaten Kapuas Hulu membuka Pelatihan Teknis Manajemen Stres Bertempat Ruang Rapat DPRD, Senin (02/12/2024).
+Sekda menyampaikan</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Rabu, 04 Des 2024
+					<i class="fa fa-clock-o"></i> 10:11 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_83WhatsApp-Image-2024-12-04-at-12.30.44.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/bupati-hadir-dalam-penganugerahan-predikat-kepatuhan-penyelenggaraan-pelayanan-publik-tahun-2024"> <h3>Bupati Hadir Dalam Penganugerahan Predikat Kepatuhan Penyelenggaraan Pelayanan Publik Tahun 2024</h3></a>
+					<p>Bupati&amp;nbsp; Kapuas Hulu Fransiskus Diaan, hadir dalam kegiatan Penganugerahan Predikat Kepatuhan Penyelenggaraan Pelayanan Publik Tahun 2024</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Rabu, 04 Des 2024
+					<i class="fa fa-clock-o"></i> 14:50 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_20WhatsApp-Image-2024-11-30-at-12.47.51.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/sekda-kapuas-hulu-pimpin-apel-hut-korpri-pgri-dan-hari-guru-nasional-2024 "> <h3>Sekda Kapuas Hulu Pimpin Apel HUT Korpri, PGRI, dan Hari Guru Nasional 2024 </h3></a>
+					<p>Putussibau, 30 November 2024 &amp;ndash; Sekretaris Daerah (Sekda) Kabupaten Kapuas Hulu, Drs. H. Mohd. Zaini, M.M., memimpin Apel dalam rangka</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Senin, 02 Des 2024
+					<i class="fa fa-clock-o"></i> 09:55 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_62WhatsApp-Image-2024-11-27-at-13.04.18.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/wabup-salurkan-hak-pilihnya-dalam-pilkada-serentak-2024"> <h3>Wabup Salurkan Hak Pilihnya Dalam Pilkada Serentak 2024</h3></a>
+					<p>Wakil Bupati Kapuas Hulu ir Wahyudi Hidayat S.T melakukan pencoblosan di Tempat Pemungutan Suara (TPS) 005 Kelurahan Hilir Kantor Kecamatan</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Jumat, 29 Nov 2024
+					<i class="fa fa-clock-o"></i> 10:28 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_14WhatsApp-Image-2024-11-27-at-13.13.48.jpeg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/bupati-kapuas-hulu-dan-ketua-tp-pkk-kapuas-hulu-salurkan-hak-suara-dalam-pilkada-2024"> <h3>Bupati Kapuas Hulu dan Ketua TP Pkk Kapuas Hulu Salurkan Hak Suara dalam Pilkada 2024</h3></a>
+					<p>Kapuas Hulu, 27 November 2024 &amp;ndash; Bupati Kapuas Hulu, Fransiskus Diaan, S.H., M.H., bersama Ketua Tim Penggerak PKK Ny. Angeline Fremalco,</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Jumat, 29 Nov 2024
+					<i class="fa fa-clock-o"></i> 10:30 wib
+					</small>
+				</div>
+			</div><div><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/posts/md_75IMG-20241121-WA0005-1024x682.jpg" class="img-responsive" alt="Image">
+				<div class="carousel-caption d-none d-md-block dark caruselbg">
+					<a href="https://diskominfo.kapuashulukab.go.id/berita/kadis-kominfotik-ikuti-presentasi-monev-keterbukaan-informasi-publik"> <h3>Kadis Kominfotik Ikuti Presentasi Monev Keterbukaan Informasi Publik</h3></a>
+					<p>Kepala Dinas Komunikasi, Informatika, dan Statistik (Diskominfotik) Kabupaten Kapuas Hulu Hadi Pranata,S.Stp,M.Si hadir dan mengikuti presentasi</p>
+					<small class="post-meta pl-0"><i class="fa fa-calendar-o"></i> Jumat, 22 Nov 2024
+					<i class="fa fa-clock-o"></i> 10:06 wib
+					</small>
+				</div>
+			</div>		</div>
+		<h1 class="heading-border-bottom-short border-primary mt-10"><i class="fa fa-picture-o text-primary"></i> Galeri Foto <a href="/web/20250113072133/https://diskominfo.kapuashulukab.go.id/galeri" type="button" class="btn btn-sm btn-info btn-outline pull-right">Arsip Foto</a></h1>
+		<div id="slider-photo-home" class="owl-carousel carousel-nav-hidefirst carousel-portfolio-card">
+			<div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_669374BAKTI.jpeg" class="" title="BAKTI Kemkominfo RI Monitoring Tower BTS di Wilayah Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_669374BAKTI.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">BAKTI Kemkominfo RI Monitoring Tower BTS di Wilayah Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_482296Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-9.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_482296Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-9.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_652640Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-7.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_652640Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-7.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_348962Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-8.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_348962Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-8.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_631701Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-10.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_631701Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-10.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_720385Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-11.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_720385Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-11.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_606460Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-12.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_606460Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-12.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_494640Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-13.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_494640Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-Kabupaten-Kapuas-Hulu-13.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_158999Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-4.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_158999Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-4.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_38819Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-6.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_38819Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-6.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_496578Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-5.jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_496578Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-5.jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div><div>
+									<div class="videohome-card">
+										<div class=" thumbnail thumbnail-hover thumbnail-no-border  gallery-magnific">
+											<a href="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_649102Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-(3).jpeg" class="" title="Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu">
+														<span class="overlay"></span>
+													<img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/gallery/md_649102Penandatanganan-MoU-dan-Kick-Of-Meeting-Penyusunan-Arsitektur-dan-Peta-Rencana-SPBE-(3).jpeg" class="img-responsive imggaldepan" alt="Portfolio">
+													<span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+												</a>
+											</div>
+											<div class="info">
+													<h3 class="title fs-13">Penandatanganan MoU dan Kick Of Meeting Penyusunan Arsitektur dan Peta Rencana SPBE Kabupaten Kapuas Hulu</h3>
+											</div>
+									</div>
+							</div>		</div>
+		<!-- END PORTFOLIO GRID -->
+		<h1 class="heading-border-bottom-short border-primary"><i class="fa fa-youtube-play text-primary"></i> Galeri Video <a href="/web/20250113072133/https://diskominfo.kapuashulukab.go.id/video" type="button" class="btn btn-sm btn-info btn-outline pull-right">Arsip Video</a></h1>
+		<div id="slider-video-home" class="owl-carousel carousel-nav-hidefirst carousel-portfolio-card">
+								<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=xss1fxZkIBM" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/xss1fxZkIBM/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> Sejarah Singkat Kota Putussibau dalam Rangka HUT Kota Putussibau Ke-129</h3>
+						<!--a href="https://www.youtube.com/watch?v=xss1fxZkIBM" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=OHmtydFqezQ" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/OHmtydFqezQ/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> Live Streaming - Tournament Badminton Kapolres Kapuas Hulu Cup Tahun 2023 </h3>
+						<!--a href="https://www.youtube.com/watch?v=OHmtydFqezQ" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=OP-WqTOGKrk&amp;t=877s" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/OP-WqTOGKrk/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> Vlog Behind The Scene | TENUN KAPUAS HULU </h3>
+						<!--a href="https://www.youtube.com/watch?v=OP-WqTOGKrk&t=877s" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=DyifHI9fj6E&amp;t=2s" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/DyifHI9fj6E/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> TENUN KAPUAS HULU | SIDAN </h3>
+						<!--a href="https://www.youtube.com/watch?v=DyifHI9fj6E&t=2s" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=0ygrRaflP6s" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/0ygrRaflP6s/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> RASIKA TALSHOW | BERSAMA KAPOLRES KAPUAS HULU </h3>
+						<!--a href="https://www.youtube.com/watch?v=0ygrRaflP6s" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=KHJeu9vDcvo" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/KHJeu9vDcvo/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> Wakil Bupati Membuka Turnament Gaspul Matahari Kapuas Hulu Tahun 2023.</h3>
+						<!--a href="https://www.youtube.com/watch?v=KHJeu9vDcvo" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=8GCthtWZuDM" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/8GCthtWZuDM/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> Wabup Membuka turnamen Sepak Bola dalam Rangka HUT-RI Ke-78 Tahun di Kecamatan Embaloh Hilir</h3>
+						<!--a href="https://www.youtube.com/watch?v=8GCthtWZuDM" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=cWFCjmvqm74" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/cWFCjmvqm74/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> Wabup Melantik Pengurus Majelis Pembimbing dan Kwartir Ranting Gerakan Pramuka Embaloh Hilir 2023</h3>
+						<!--a href="https://www.youtube.com/watch?v=cWFCjmvqm74" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=hX-64UHaXpI" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/hX-64UHaXpI/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> KTT Ke-43 ASEAN di Jakarta. KTT akan berlangsung pada 5-7 September 2023. Yuk Sukseskan KTT ASEAN!</h3>
+						<!--a href="https://www.youtube.com/watch?v=hX-64UHaXpI" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>					<div>
+										<div class="videohome-card">
+											<div class=" thumbnail thumbnail-hover thumbnail-no-border">
+												<a href="https://www.youtube.com/watch?v=qr8y0B0nIoE" class=" iframe-magnific">
+															<span class="overlay"></span>
+														<img src="https://i1.ytimg.com/vi/qr8y0B0nIoE/hqdefault.jpg" class="img-responsive" alt="Portfolio">
+														<span class="thumbnail-icon"><i class="fa fa-youtube-play"></i></span>
+													</a>
+												</div>
+												<div class="info">
+														<h3 class="title fs-13"> PPID PEMERINTAH KABUPATEN KAPUAS HULU</h3>
+						<!--a href="https://www.youtube.com/watch?v=qr8y0B0nIoE" class="btn btn-primary btn-sm iframe-magnific">PLAY</a-->
+					</div>
+				</div>
+			</div>		</div>
+		<h1 class="heading-border-bottom-short border-primary"><i class="fa fa-laptop text-primary"></i> PROFIL DISKOMINFO &amp; STATISTIK </h1>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jT2U_ooHg5U" allowfullscreen=""></iframe>
+		</div>
+		<!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/jT2U_ooHg5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		</div><!-- coll -->
+		<div class="col-sm-3 pr-0">
+			<div class="sidebar">
+				<div class="widget widget-bordered pt-10 mb-15">
+					<h4 class="widget-title border-primary fs-18"><i class="icon icon_phone ico-styled text-primary"></i> NOMOR PENTING</h4>
+					<ul class="list-unstyled nomorpenting">
+						<li style="font-size:11px;">PDAM Kab. Kapuas Hulu <span class="pull-right"><strong>085758214358</strong></span></li><li style="font-size:11px;">Pemadam Kebakaran <span class="pull-right"><strong>085245534000</strong></span></li><li style="font-size:11px;">Bhabinkamtibnas <span class="pull-right"><strong>081352359898</strong></span></li><li style="font-size:11px;">Satuan Reskrim <span class="pull-right"><strong>056721398</strong></span></li><li style="font-size:11px;">Polsek Putussibau Utara <span class="pull-right"><strong>085252197666</strong></span></li><li style="font-size:11px;">Polres Kapuas Hulu <span class="pull-right"><strong>082251587922</strong></span></li>					</ul>
+				</div>
+				<div class="widget widget-bordered pt-10 mb-15">
+					<h4 class="widget-title fs-18"><i class="fa fa-bullhorn ico-styled text-primary"></i> PENGUMUMAN</h4>
+					<ul class="list-unstyled recommended-posts">
+						<li class="fs-14 bb-list"><a href="https://diskominfo.kapuashulukab.go.id/berita/pengumuman-seleksi-administrasi-cpns-2018-kabupaten-kapuas-hulu">Pengumuman Seleksi Administrasi CPNS 2018 Kabupaten Kapuas Hulu<br>
+															<small class="post-meta pl-0 fs-11"><i class="fa fa-calendar-o"></i> Jumat, 19 Okt 2018
+								<i class="fa fa-clock-o"></i> 08:00 wib
+								</small>
+													</a></li><li class="fs-14 bb-list"><a href="https://diskominfo.kapuashulukab.go.id/berita/pengumuman-seleksi-administrasi-cpns-2018-kabupaten-kapuas-hulu">Pengumuman Seleksi Administrasi CPNS 2018 Kabupaten Kapuas Hulu<br>
+															<small class="post-meta pl-0 fs-11"><i class="fa fa-calendar-o"></i> Jumat, 19 Okt 2018
+								<i class="fa fa-clock-o"></i> 08:00 wib
+								</small>
+													</a></li><li class="fs-14 bb-list"><a href="https://diskominfo.kapuashulukab.go.id/berita/pengumuman-seleksi-administrasi-cpns-2018-kabupaten-kapuas-hulu">Pengumuman Seleksi Administrasi CPNS 2018 Kabupaten Kapuas Hulu<br>
+															<small class="post-meta pl-0 fs-11"><i class="fa fa-calendar-o"></i> Jumat, 19 Okt 2018
+								<i class="fa fa-clock-o"></i> 08:00 wib
+								</small>
+													</a></li>					</ul>
+				</div>
+				<div id="gpr-kominfo-widget-container"></div>
+				<div class="widget widget-bordered mt-20 mb-15 pt-10">
+					<h4 class="widget-title fs-18"><i class="fa fa-bar-chart ico-styled text-primary"></i> STAT PENGUNJUNG</h4>
+					<ul class="list-unstyled">
+						<li class="listpengunjung "><i class="fa fa-users"></i> Sedang Online <span class="label label-primary pull-right mt-4">
+							1						</span></li>
+						<li class="listpengunjung"><i class="fa fa-users"></i> Hari Ini <span class="label label-success pull-right mt-4">26</span></li>
+						<li class="listpengunjung"><i class="fa fa-users"></i> Minggu Ini <span class="label label-info pull-right mt-4">26</span></li>
+						<li class="listpengunjung"><i class="fa fa-users"></i>  Keseluruhan <span class="label label-warning pull-right mt-4">37086</span></li>
+						<li class="listpengunjung"><i class="fa fa-users"></i>  Total Hits <span class="label label-danger pull-right number mt-4">66170</span></li>
+					</ul>
+				</div>
+				<div class="widget widget-bordered mt-10 p-0 mb-10">
+					<div id="mapdepan" class="h-250"></div>
+				</div>
+				
+						<p class="text-center mt-10">Streaming Radio RASIKA Kapuas Hulu</p>
+                    <div class="widget widget_tt_popular_post">
+                        <div class="tt-popular-post border-bottom-tab">
+                            <audio id="stream" controls preload="none" style="width: 100%;">
+                                <source src="https://i.klikhost.com/8168/" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div> 
+
+			</div>
+		</div>
 		
-		<?php include "_header.php"; ?>
-        
-		<?php
-				if(isset($_GET['page']) && $_GET['page']=='beranda'){
-		?>
+	</div>
+</div>
 
-        <?php
-			}
-		?>
+<section class="pb-15 pt-15">
+	<div class="container bg-abu pt-10">
+		<div class="section-heading-center heading-small">
+			<h2 class="heading">LAYANAN &amp; INFORMASI</h2>
+			<p class="section-lead">Layanan dan Informasi Pemerintah Kabupaten Kapuas Hulu</p>
+		</div>
+		<div class="row ">
+			<div class="col-md-4">
+				<div class="icon-info icon-info-left">
+					<i class="fa fa-percent ico-styled-lg ico-styled-circle-solid bg-primary  float-left" style="background-color:#1E8BC3"></i>
+					<div class="text pt-15 ml-50">
+						<h2 class="title">TRANSPARANSI ANGGARAN</h2>
+						<p class="fs-13 ">Tranasparansi Pengelolaan Anggaran Daerah Kabupaten Kapuas Hulu.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon-info icon-info-left">
+					<i class="fa fa-balance-scale ico-styled-lg ico-styled-circle-solid bg-red text-white  float-left" style="background-color:#1E8BC3"></i>
+					<div class="text pt-15 ml-50">
+						<a href="http://jdih.kapuashulukab.go.id/"><h2 class="title">PRODUK HUKUM</h2></a>
+						<p class="fs-13 ">Cari dan Temukan Peraturan Hukum Kabupaten Kapuas Hulu.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon-info icon-info-left">
+					<i class="fa fa-laptop ico-styled-lg ico-styled-circle-solid text-white bg-olive float-left" style="background-color:#1E8BC3"></i>
+					<div class="text pt-15 ml-50">
+						<a href="http://ppid.kapuashulukab.go.id/"><h2 class="title">PPID</h2></a>
+						<p class="fs-13 ">Pejabar Pengelola Informasi dan Dokumentasi Kabupaten Kapuas Hulu.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon-info icon-info-left">
+					<i class="fa fa-qrcode ico-styled-lg ico-styled-circle-solid text-white bg-green float-left" style="background-color:#1E8BC3"></i>
+					<div class="text pt-15 ml-50">
+						<h2 class="title">PROFIL OPD</h2>
+						<p class="fs-13 ">Profil Organisasi Perangkat Daerah Kabupaten Kapuas Hulu.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon-info icon-info-left">
+					<i class="fa fa-shopping-bag ico-styled-lg ico-styled-circle-solid bg-maroon text-white  float-left" style="background-color:#1E8BC3"></i>
+					<div class="text pt-15 ml-50">
+						<a href="http://lpse.kapuashulukab.go.id/"><h2 class="title">LPSE</h2></a>
+						<p class="fs-13">Layanan Pengadaan Secara Elektronik Kabupaten Kapuas Hulu.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon-info icon-info-left">
+					<i class="fa fa-shopping-bag ico-styled-lg ico-styled-circle-solid text-white  float-left" style="background-color:#1E8BC3"></i>
+					<div class="text pt-15 ml-50">
+						<a href="https://lapor.go.id/"><h2 class="title">Sampaikan Aduan Saran</h2></a>
+						<p class="fs-13 ">Sampaikan Kritik dan saran Untuk Kemajuan Kabupaten Kapuas Hulu.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--section class="pb-15 pt-0">
+	<div class="container bg-white pt-20">
+			<div class="section-heading heading-small heading-border-left border-primary">
+					<h2 class="heading no-margin-bottom">STATUS LAYANAN</h2>
+			</div>
+	<div class="row icon-info-center-group">
+			<div class="col-md-2">
+					<div class="icon-info icon-info-center m-0">
+				<i class="icon icon_desktop ico-styled-lg ico-styled-circle-solid ico-gray-bg"></i><h3 class="title">PORTAL</h3>			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="icon-info icon-info-center">
+				<i class="fa fa-desktop ico-styled-lg ico-styled-square text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="online"></i><h3 class="title">LPSE</h3>			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="icon-info icon-info-center">
+				<i class="fa fa-desktop ico-styled-lg ico-styled-square text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="online"></i><h3 class="title">PPID</h3>			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="icon-info icon-info-center">
+				<i class="fa fa-desktop ico-styled-lg ico-styled-square text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="online"></i><h3 class="title">WEBMAIL</h3>			</div>
+		</div>
+	</div>
+</div>
+</section-->      <!-- FOOTER -->
+      <footer class="footer-minimal">
+        <div class="container">
+          <div class="row text-center ">
+            <div class="col-md-12 ">
+              <center><img src="https://diskominfo.kapuashulukab.go.id/public/assets/images/theme/lambang_md.png" class="img-responsive img-footer" style="height: 200px;" alt="DINKES"></center><br/>
+              <h3 class="text-white">DISKOMINFOTIK | KAPUAS HULU</h3>
+              <address class="mb-0">
+              <i class="icon icon_pin_alt ico-styled text-primary"></i> Jl. Antasari No. 8 Putussibau</address>
+              <address class="mb-0"><i class="icon icon_phone ico-styled text-primary"></i>
+              <abbr title="Phone">Telepon :</abbr> 0567 2022922            </address>
+            <address><i class="icon icon_mail_alt ico-styled text-primary"></i> <a href="mailto:diskominfo_statistik@kapuashulukab.go.id"> diskominfo_statistik@kapuashulukab.go.id</a></address>
+          </div>
+          <ul class="list-inline social-icons">
+            <li><a href="https://www.facebook.com/DiskominfotikKH/" class="facebook-bg" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter-bg" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/diskominfotikkh/" class="instagram-bg" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UC9Ov2_Uf08KyC0oKoMYuh1Q" class="youtube-bg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright-text text-center margin-top-30 no-margin-bottom">&copy; Copyright 2025  DISKOMINFOTIK | KAPUAS HULU</p>
+    </footer>
+    <!-- END FOOTER -->
+    <div class="back-to-top">
+      <a href="#top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+  </div>
+  <!-- END WRAPPER -->
+  <!-- JAVASCRIPT -->
+  <!-- JAVASCRIPT -->
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/jquery-2.1.1.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/bootstrap.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/easing/jquery.easing.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/parsley-validation/parsley.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/isotope/layout-modes/masonry.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/jquery.bxSlider.min.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/jquery.marquee.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="" crossorigin=""></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/main.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/theme.js"></script>
+  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/map.js"></script>
+  <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+  <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>  <script src="https://diskominfo.kapuashulukab.go.id/public/assets/js/custom.js"></script>
+  
+</html><!--
+     FILE ARCHIVED ON 07:21:33 Jan 13, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:40:28 May 25, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-		<?php
-			include 'page/'.$_GET['page'].".php";
-		?> 
-
-		<?php include "_footer.php"; ?>
-
-        
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
-        <script src="assets/fontawesome/css/all.min.css"></script>
-        <script src="assets/slick/slick.min.js"></script>
-		<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/fullcalendar/moment.min.js"></script>
-        <script src="assets/fullcalendar/fullcalendar.min.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/sweetalert2/sweetalert2.all.min.js" type="text/javascript" ></script>
-		<script>
-			$('.owl-carousel').owlCarousel({
-            loop:false,
-            stagePadding: 15,
-            margin:10,
-            nav:true,
-             navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
-            responsive:{
-                0:{
-                    items:1
-                },
-                640:{
-                    items:2
-                },
-                960:{
-                    items:3
-                },
-                1200:{
-                    items:4
-                }
-                }
-            })
-		</script>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var tgl = new Date();
-                $('#calendar').fullCalendar({
-                header: {
-                    left: '',
-                    center: 'title',
-                    right: 'prev,next today'
-                },
-                defaultDate: tgl,
-                defaultView: 'month',
-                editable: false,
-                events: <?php include "_agenda.php"; ?>,
-                eventClick: function(info) {                 
-                let html;
-                html = "<a href='#' class='list-group-item'><small>"+info.tanggal+"</small><br>"+info.title+"</a>"
-                $('#agenda_list').html(html);
-                }       
-                });     
-            });    
-        </script>
-
-        <script>	
-            function show_kategori(cls, caption){
-                $(".tab_kategori").hide();
-                $("#nama_arsip").text(caption);
-                $("."+cls).show();
-            }
-        </script>
-
-        <script type="text/javascript">
-			
-			function LihatArsip(id, file){
-				$('#id_arsip').val(id);
-				$('#exampleModal').modal('show');
-			}
-			
-		</script>
-
-        <script type="text/javascript">
-
-                function survei(id){
-                    $.ajax({
-                        url:'act.php',
-                        type:'POST',
-                        data:'survei='+id,
-                        success:function(msg){
-                            swal({
-                                    title: "Berhasil!",
-                                    text: "Data telah disimpan.",
-                                    type: "success",
-                                    timer: 3000,
-                                    timerProgressBar: true,
-                                    onClose: () => {
-                                        location.reload();
-                                    }
-                                });
-                        }
-                    });
-                }
-                
-            
-        </script>
-    </body>
-</html>
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.636
+  exclusion.robots: 0.028
+  exclusion.robots.policy: 0.016
+  esindex: 0.012
+  cdx.remote: 61.34
+  LoadShardBlock: 318.811 (3)
+  PetaboxLoader3.datanode: 121.255 (4)
+  PetaboxLoader3.resolve: 284.934 (2)
+  load_resource: 141.341
+-->
